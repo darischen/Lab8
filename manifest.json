@@ -4,8 +4,8 @@
     "description": "Build PWA",
     "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "white",
-    "theme_color": "light blue",
+    "background_color": "#fff",
+    "theme_color": "#aaa",
     "icons": [
       {
         "src": "/assets/images/icons/icon-192x192.png",

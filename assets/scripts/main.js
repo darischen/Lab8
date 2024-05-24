@@ -45,7 +45,7 @@ function initializeServiceWorker() {
   // We first must register our ServiceWorker here before any of the code in
   // sw.js is executed.
   // B1. TODO - Check if 'serviceWorker' is supported in the current browser
-  if (ServiceWorker in navigator) {
+  if ('serviceWorker' in navigator) {
     console.log('Service Worker is supported');
     // B2. TODO - Listen for the 'load' event on the window object.
     addEventListener('load', () => {
@@ -124,6 +124,7 @@ async function getRecipes() {
         //            we have provided. Then, pass the recipes array to the Promise's
         //            resolve() method.
         if (fetchedRecipes.length == RECIPE_URLS.length) {
+          saveRecipesToStorage(fetchedRecipes);
           resolve(fetchedRecipes);
         }
       } catch (err) {

@@ -1,9 +1,9 @@
 {
     "name": "Lab8-Starter",
-    "short_name": "Daris",
+    "short_name": "Daris Chen",
     "description": "Build PWA",
     "start_url": "./index.html",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#fff",
     "theme_color": "#aaa",
     "icons": [
@@ -64,4 +64,3 @@
       }
     ]
   }
-  
